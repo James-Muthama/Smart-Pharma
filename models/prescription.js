@@ -44,10 +44,6 @@ const prescriptionSchema = new Schema({
     type: String,
     required :[true, 'Please enter Prescription End Date'],
   },
-  price: {
-    type: String,
-    required :[true, 'Please enter price'],
-  },
 }, {timestamps: true});
 
 

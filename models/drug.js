@@ -21,3 +21,5 @@ const drugSchema = new Schema({
 }, {timestamps: true});
 
 const Drug = mongoose.model('drug', drugSchema);
+
+module.exports = Drug;
