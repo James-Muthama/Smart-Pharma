@@ -26,3 +26,5 @@ const doctorSchema = new Schema({
 }, {timestamps: true});
 
 const Doctor = mongoose.model('doctor', doctorSchema);
+
+module.exports = Doctor;

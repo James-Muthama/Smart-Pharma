@@ -15,3 +15,5 @@ const pharmaciticalSchema = new Schema({
 }, {timestamps: true});
 
 const Pharmacitical = mongoose.model('pharmacitical', pharmaciticalSchema);
+
+module.exports = Pharmacitical;

@@ -21,3 +21,5 @@ const symptomsSchema = new Schema({
 }, {timestamps: true});
 
 const Symptoms = mongoose.model('symptoms', symptomsSchema);
+
+module.exports = Symptoms;
