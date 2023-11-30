@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Pharma | <%= title %></title>
+  <link rel="stylesheet" href="../css/patient_homepage.css">
+</head>
+<body>
+
+  <%- include('./partials/header') %>
+
+  <div id="login_container">
+    <form action="">
+      <div id= "login_form">
+        <p>Symptoms Form</p>
+        <label id="l_email" for="email">Email:</label><br>
+        <input id="i_email" type="text" id="l_username" name="email"><br>
+        <label id="l_symptoms" for="symptoms">Symptoms:</label><br>
+        <input id="i_symptoms" type="text" id="l_username" name="symptoms"><br>
+        <label id="l_date" for="date">When Symptoms started:</label><br>
+        <input id="i_date" type="text" value = "DD/MM/YYYY" id="l_username" name="date"><br>
+        <input id="log_in" type="submit" value="Send Symptoms">
+
+      </div>
+    </form>
+  </div>
+
+  <%- include('./partials/footer') %>
+
+</body>
+</html>

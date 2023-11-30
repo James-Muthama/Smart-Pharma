@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Pharma | <%= title %></title>
+  <link rel="stylesheet" href="../css/admin_page.css">
+</head>
+<body>
+
+  <%- include('./partials/header') %>
+
+  <h2>Patient Table</h2>
+  <table>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Gender</th>
+      <th>DOB</th>
+      <th>Email</th>
+      <th>Password</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="/admin/update_patients">UPDATE</a</td>
+      <td><a href="/admin/delete_patients">DELETE</a></td>
+    </tr>
+  </table>
+
+  <h2>Doctor Table</h2>
+  <table>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Doctor email</th>
+      <th>Password</th>
+      <th><a href="/admin/add_doctor">ADD</a></th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="/admin/update_doctor">UPDATE</a</td>
+        <td><a href="/admin/delete_doctor">DELETE</a></td>
+    </tr>
+  </table>
+
+  <h2>Pharmacitical Table</h2>
+  <table>
+    <tr>
+      <th>Pharma Name</th>
+      <th>Password</th>
+      <th><a href="/admin/add_pharma">ADD</a></th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><a href="/admin/update_pharma">UPDATE</a</td>
+        <td><a href="/admin/delete_pharma">DELETE</a></td>
+    </tr>
+  </table>
+
+  <h2>Drug Table</h2>
+  <table>
+    <tr>
+      <th>Drug Name</th>
+      <th>Pharma Name</th>
+      <th>Amount</th>
+      <th>Price</th>
+      <th><a href="/admin/add_drug">ADD</a></th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="/admin/update_drug">UPDATE</a</td>
+        <td><a href="/admin/delete_drug">DELETE</a></td>
+    </tr>
+  </table>
+
+  <h2>Symptoms Table</h2>
+  <table>
+    <tr>
+      <th>Patient Email</th>
+      <th>Symptoms</th>
+      <th>When Symptoms started</th>
+      <th><a href="/admin/add_symptom">ADD</a></th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="/admin/update_symptom">UPDATE</a</td>
+        <td><a href="/admin/delete_symptom">DELETE</a></td>
+    </tr>
+  </table>
+
+  <h2>Prescription Table</h2>
+  <table>
+    <tr>
+      <th>Patient Email</th>
+      <th>Doctor Username</th>
+      <th>Symptoms</th>
+      <th>Drug Name</th>
+      <th>Quantity</th>
+      <th>Dosage</th>
+      <th>Prescription Start Date</th>
+      <th>Prescription End Date</th>
+      <th>Price</th>
+      <th><a href="/admin/add_prescription">ADD</a></th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="/admin/update_prescription">UPDATE</a</td>
+      <td><a href="/admin/delete_prescription">DELETE</a></td>
+    </tr>
+  </table>
+
+  <%- include('./partials/footer') %>
+
+</body>
+</html>

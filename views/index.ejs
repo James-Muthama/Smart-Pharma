@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Pharma | <%= title %></title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <%- include('./partials/header') %>
+
+  <div id="promo_div">
+    <img id= "img1" src="images/smart_pharma_pic.jpg" alt="">
+    <p id="promo">Your one Stop Pharmacist Companion</p>
+  </div>
+
+  <div id="promo_container">
+    <p id="promo_text">
+      Discover a healthier you at Smart Pharma. Your trusted destination for quality medications, expert advice, and wellness essentials. Embrace well-being with us today. Your health, our priority!
+    </p>
+  </div>
+
+  <div class="container">
+    <p class ="txt">
+      Experience superior care at Smart Pharma. Your well-being matters to us. Trust in our expertise for a healthier tomorrow!
+    </p>
+    <a class="btn" href="/patient/login"> Patient Login</a>
+  </div>
+
+  <div class="container" id="doctor_conatiner">
+    <p class ="txt" id="doctor_conatiner_txt">
+      Elevate patient care with Smart Pharma. Seamless service, quality medications. Partner with us for optimal health outcomes. Your patients deserve it.
+    </p>
+    <a class="btn" id="doctor_conatiner_btn" href="/doctor/login"> Doctor Login</a>
+  </div>
+
+  <div class="container">
+    <p class ="txt">
+      Optimize distribution with Smart Pharma. Reliability, efficiency, and quality service. Elevate your products' reach. Partner for pharmaceutical success. Unleash potential today.
+    </p>
+    <a class="btn" href="/pharmacist/login"> Pharmacist Login</a>
+  </div>
+
+  <%- include('./partials/footer') %>
+
+</body>
+</html>

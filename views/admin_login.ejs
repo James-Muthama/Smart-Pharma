@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Pharma | <%= title %></title>
+  <link rel="stylesheet" href="../css/patient_login.css">
+</head>
+<body>
+
+  <%- include('./partials/header') %>
+
+  <div id="login_container">
+    <form action="">
+      <div id= "login_form">
+        <p>Admin Login Form</p>
+        <label for="username">Admin Username:</label><br>
+        <input class="l_input" type="text" id="l_username" name="a_username"><br>
+        <label for="pwd">Password:</label><br>
+        <input class="l_input"type="l_password" id="pwd" name="a_pwd" minlength="8"><br>
+        <input id="doctor_login" type="submit" value="Log In">
+      </div>
+    </form>
+  </div>
+
+  <%- include('./partials/footer') %>
+
+  <script>
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      //gte values
+      const email = form.email.value;
+      const password = form.password .value;
+
+      try{
+        const res = await fetch('/patient/login', {
+          method: POST,
+          body: JSON.stringify({email, password})
+        })
+      }
+    })
+  </script>
+
+</body>
+</html>

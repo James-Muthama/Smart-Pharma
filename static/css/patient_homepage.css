@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+body{
+  max-width: 1200px;
+  background-color:whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+#logo_container{
+  position: relative;
+  background-color: burlywood;
+  width: 1295px;
+  height: 130px;
+  left: -20px;
+}
+
+#logo{
+  color: black;
+  position: absolute;
+  font-size: 380%;
+  left: 40px;
+  top: -30px;
+  font-family: "Sofia", sans-serif;
+}
+
+.btn_bold:hover{
+  font-weight:bold ;
+}
+a{
+  color: black;
+  text-decoration: none;
+  font-size: medium;
+}
+
+#patients_button{
+  color: black;
+  position: absolute;
+  font-size: 150%;
+  left: 520px;
+  top: 65px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#doctor_button{
+  color: black;
+  position: absolute;
+  font-size: 150%;
+  left: 720px;
+  top: 65px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#pharmacist_button{
+  color: black;
+  position: absolute;
+  font-size: 150%;
+  left: 900px;
+  top: 65px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#admin_button{
+  color: black;
+  position: absolute;
+  font-size: 150%;
+  left: 1120px;
+  top: 65px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footer_div{
+  position: relative;
+  width: 1262px;
+  height: 100px;
+}
+
+#footer_page{
+  position: absolute;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+  font-size: 150%;
+  top: 40px;
+  left: 470px;
+}
+
+p{
+  position: absolute;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   font-weight: bold;
+  font-size: 150%;
+  left: 50px;
+}
+
+#log_out{
+  position: absolute;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   font-weight: bold;
+  top: 40px;
+  left: 1150px;
+  height: 30px;
+  width: 70px;
+  background-color: burlywood;
+  text-align: center;
+}
+
+#layout{
+  position: relative;
+  width: 1262px;
+  height: 300px;
+}
+
+#prescription{
+  position: absolute;
+  font-family: "Sofia", sans-serif;
+  background-color: burlywood;
+  top: 150px;
+  left: 350px;
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  font-size: 200%;
+  border-radius: 50%;
+}
+
+#symptoms{
+  position: absolute;
+  font-family: "Sofia", sans-serif;
+  background-color: burlywood;
+  top: 150px;
+  left: 850px;
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  font-size: 200%;
+  border-radius: 50%;
+
+}
+
+#login_container{
+  position: relative;
+  width: 1262px;
+  height: 490px;
+}
+
+#login_form{
+  background-color: burlywood;
+  position: absolute;
+  height: 450px;
+  width: 300px;
+  left: 490px;
+  top: 50px;
+  text-align: center;
+}
+
+p{
+  font-family: "Sofia", sans-serif;
+  font-size: 200%;
+}
+
+#l_email{
+  position: absolute;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150%;
+  top: 100px;
+  left: 120px;
+}
+
+#i_email{
+  position: absolute;
+  background-color: whitesmoke;
+  margin: 0px ;
+  width: 150px;
+  height: 20px;
+  top: 130px;
+  left: 75px;
+}
+
+#l_symptoms{
+  position: absolute;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150%;
+  top: 180px;
+  left: 100px;
+}
+
+#i_symptoms{
+  position: absolute;
+  background-color: whitesmoke;
+  margin: 0px ;
+  width: 190px;
+  height: 70px;
+  top: 210px;
+  left: 60px;
+}
+
+#l_date{
+  position: absolute;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150%;
+  top: 290px;
+  left: 25px;
+}
+
+#i_date{
+  position: absolute;
+  background-color: whitesmoke;
+  margin: 0px ;
+  width: 150px;
+  height: 20px;
+  top: 320px;
+  left: 80px;
+}
+
+#log_in{
+  position: absolute;
+  top: 370px;
+  width: 130px;
+  height: 30px;
+  left: 85px;
+  font-size: 105%;
+  font-weight: bold;
+  font-family: "Sofia", sans-serif;
+  background-color: whitesmoke;
+  margin: 0px ;
+  border: 1px solid black;
+}
+
+h2{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table{
+  font-family: "Sofia", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}

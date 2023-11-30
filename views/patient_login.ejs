@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Pharma | <%= title %></title>
+  <link rel="stylesheet" href="../css/patient_login.css">
+</head>
+<body>
+
+  <%- include('./partials/header') %>
+
+  <script>
+    <% Object.entries(errors).forEach(([key, value]) => { %>
+      <% if (value) { %>
+        alert('Sign Up Error: <%= value %>');
+      <% } %>
+    <% }); %>
+  </script>
+
+
+  <div id="login_container">
+    <form action="/patient/login" method="POST">
+      <div id= "login_form">
+        <p>Patient Login Form</p>
+        <label for="email">Email:</label><br>
+        <input class="l_input" type="text" id="l_username" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input class="l_input" type="password" id="pwd" name="password" minlength="8"><br>
+        <input id="log_in" type="submit" value="Log In">
+        <a id="l_sign_up" href="/patient/signup"> Sign Up</a>
+      </div>
+    </form>
+  </div>
+
+  <%- include('./partials/footer') %>
+
+</body>
+</html>
