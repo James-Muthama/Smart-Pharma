@@ -88,6 +88,81 @@ a{
   height: 490px;
 }
 
+#dr_login_container{
+  position: relative;
+  width: 1262px;
+  height: 430px;
+}
+
+#ph_login_container{
+  position: relative;
+  width: 1262px;
+  height: 350px;
+}
+
+#d_login_container{
+  position: relative;
+  width: 1262px;
+  height: 400px;
+}
+
+#p_login_container{
+  position: relative;
+  width: 1262px;
+  height: 600px;
+}
+
+#login_form{
+  background-color: burlywood;
+  position: absolute;
+  height: 465px;
+  width: 300px;
+  left: 490px;
+  top: 20px;
+  text-align: center;
+}
+
+#dr_login_form{
+  background-color: burlywood;
+  position: absolute;
+  height: 395px;
+  width: 300px;
+  left: 490px;
+  top: 20px;
+  text-align: center;
+}
+
+#ph_login_form{
+  background-color: burlywood;
+  position: absolute;
+  height: 335px;
+  width: 300px;
+  left: 490px;
+  top: 20px;
+  text-align: center;
+}
+
+#d_login_form{
+  background-color: burlywood;
+  position: absolute;
+  height: 385px;
+  width: 300px;
+  left: 490px;
+  top: 20px;
+  text-align: center;
+}
+
+#p_login_form{
+  background-color: burlywood;
+  position: absolute;
+  height: 580px;
+  width: 300px;
+  left: 490px;
+  top: 20px;
+  text-align: center;
+}
+
+
 #login_form{
   background-color: burlywood;
   position: absolute;
@@ -120,6 +195,62 @@ label{
   position: absolute;
   background-color: whitesmoke;
   top: 425px;
+  width: 100px;
+  height: 30px;
+  left: 100px;
+  font-size: 105%;
+  font-weight: bold;
+  font-family: "Sofia", sans-serif;
+  margin: 0px ;
+  border: 1px solid black;
+}
+
+#dr_s_sign_up{
+  position: absolute;
+  background-color: whitesmoke;
+  top: 355px;
+  width: 100px;
+  height: 30px;
+  left: 100px;
+  font-size: 105%;
+  font-weight: bold;
+  font-family: "Sofia", sans-serif;
+  margin: 0px ;
+  border: 1px solid black;
+}
+
+#ph_s_sign_up{
+  position: absolute;
+  background-color: whitesmoke;
+  top: 295px;
+  width: 100px;
+  height: 30px;
+  left: 100px;
+  font-size: 105%;
+  font-weight: bold;
+  font-family: "Sofia", sans-serif;
+  margin: 0px ;
+  border: 1px solid black;
+}
+
+#d_s_sign_up{
+  position: absolute;
+  background-color: whitesmoke;
+  top: 340px;
+  width: 100px;
+  height: 30px;
+  left: 100px;
+  font-size: 105%;
+  font-weight: bold;
+  font-family: "Sofia", sans-serif;
+  margin: 0px ;
+  border: 1px solid black;
+}
+
+#p_s_sign_up{
+  position: absolute;
+  background-color: whitesmoke;
+  top: 525px;
   width: 100px;
   height: 30px;
   left: 100px;

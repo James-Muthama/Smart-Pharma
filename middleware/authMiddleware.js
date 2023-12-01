@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const requireAuth = (req,res, next) => {
+const patientAuth = (req,res, next) => {
   const token = req.cookies.jwt;
 
   //check json web token exists & is verified
@@ -18,4 +18,24 @@ const requireAuth = (req,res, next) => {
   }
 }
 
-module.exports = requireAuth;
+const adminAuth = (req,res, next) => {
+  const token = req.cookies.jwt;
+
+  //check json web token exists & is verified
+  if(token){
+    jwt.verify(token, 'Smart Pharma Patient', (err, decodedToken) => {
+      if(err){
+        res.redirect('/admin/login');
+      }else{
+        next();
+      }
+    })
+  }
+  else{
+    res.redirect('/admin/login');
+  }
+}
+
+module.exports = patientAuth;
+module.exports = adminAuth;
+

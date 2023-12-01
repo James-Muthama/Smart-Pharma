@@ -4,48 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Pharma | <%= title %></title>
-  <link rel="stylesheet" href="../css/patient_signup.css">
+  <link rel="stylesheet" href="../css/patient_homepage.css">
 </head>
 <body>
 
   <%- include('./partials/header') %>
 
-  
-  <script>
-    <% Object.entries(errors).forEach(([key, value]) => { %>
-      <% if (value) { %>
-        alert('Sign Up Error: <%= value %>');
-      <% } %>
-    <% }); %>
-  </script>
-
-
   <div id="login_container">
-    <form action="/patient/signup" method="POST">
+    <form action="/admin/add_symptom" method="POST">
       <div id= "login_form">
-        <p>SignUp Form</p>
-        <label for="firstname">First name:</label><br>
-        <input class="l_input" type="text" id="fname" name="firstname"><br>
-        <label for="lastname">Last name:</label><br>
-        <input class="l_input" type="text" id="lname" name="lastname"><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label><br>
-        <label for="DOB">Date Of Birth:</label><br>
-        <input class="l_input" type="text" id="dob" name="DOB" value="DD/MM/YYYY"><br>
-        <label for="email">Email:</label><br>
-        <input class="l_input" type="text" id="username" name="email"><br>
-        <label for="password">Password:</label><br>
-        <input class="l_input" type="password" id="pwd" name="password" minlength="8"><br>
-        <input id="s_sign_up" class="l_input" type="submit" value="Sign Up">
+        <p>Add Symptoms</p>
+        <label id="l_email" for="email">Email:</label><br>
+        <input id="i_email" type="text" id="l_username" name="email"><br>
+        <label id="l_symptoms" for="symptoms">Symptoms:</label><br>
+        <input id="i_symptoms" type="text" id="l_username" name="symptoms"><br>
+        <label id="l_date" for="date">When Symptoms started:</label><br>
+        <input id="i_date" type="text" id="l_username" name="date"><br>
+        <input id="log_in" type="submit" value="Add Symptoms">
+
       </div>
-  </form>
+    </form>
   </div>
-  
+
   <%- include('./partials/footer') %>
 
 </body>
+
 </html>

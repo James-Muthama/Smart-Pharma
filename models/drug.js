@@ -11,11 +11,11 @@ const drugSchema = new Schema({
     required : [true, 'Please enter Last Name']
   },
   amount: {
-    type: Int16Array,
+    type: String,
     required :[true, 'Please enter valid amount']
   },
   price: {
-    type: Int16Array,
+    type: String,
     required :[true, 'Please enter valid amount']
   },
 }, {timestamps: true});

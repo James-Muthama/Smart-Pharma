@@ -1,5 +1,6 @@
 const mongoose= require('mongoose');
 const Schema = mongoose.Schema;
+const {isEmail} = require('validator');
 
 const adminSchema = new Schema({
   email: {
@@ -16,3 +17,5 @@ const adminSchema = new Schema({
 }, {timestamps: true});
 
 const Admin = mongoose.model('admin', adminSchema);
+
+module.exports = Admin;

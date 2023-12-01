@@ -1,6 +1,6 @@
 const express = require('express');
 const Patient = require('../models/patient');
-const requireAuth = require('../middleware/authMiddleware');
+const patientAuth = require('../middleware/authMiddleware');
 const jwt = require('jsonwebtoken');
 
 
@@ -48,15 +48,15 @@ router.get("/signup", (req, res) => {
   res.render('patient_signup', {title: 'Patient Sign Up', errors: []});
 });
 
-router.get("/homepage", requireAuth,(req, res) => {
+router.get("/homepage", patientAuth,(req, res) => {
   res.render('patient_homepage', {title: 'Patient Home Page', user: []});
 });
 
-router.get("/prescription", requireAuth,(req, res) => {
+router.get("/prescription", patientAuth,(req, res) => {
   res.render('patient_prescription', {title: 'Patient Prescription Page'});
 });
 
-router.get("/symptoms", requireAuth , (req, res) => {
+router.get("/symptoms", patientAuth , (req, res) => {
   res.render('patient_symptoms', {title: 'Patient Symptoms Page'});
 });
 

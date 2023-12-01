@@ -93,3 +93,14 @@ table{
   border-collapse: collapse;
   width: 100%;
 }
+
+#log_out{
+  position: absolute;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   font-weight: bold;
+  top: 40px;
+  left: 1150px;
+  height: 30px;
+  width: 70px;
+  background-color: burlywood;
+  text-align: center;
+}

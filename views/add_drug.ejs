@@ -20,27 +20,19 @@
   </script>
 
 
-  <div id="login_container">
-    <form action="/patient/signup" method="POST">
-      <div id= "login_form">
-        <p>SignUp Form</p>
-        <label for="firstname">First name:</label><br>
-        <input class="l_input" type="text" id="fname" name="firstname"><br>
-        <label for="lastname">Last name:</label><br>
-        <input class="l_input" type="text" id="lname" name="lastname"><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label><br>
-        <label for="DOB">Date Of Birth:</label><br>
-        <input class="l_input" type="text" id="dob" name="DOB" value="DD/MM/YYYY"><br>
-        <label for="email">Email:</label><br>
-        <input class="l_input" type="text" id="username" name="email"><br>
-        <label for="password">Password:</label><br>
-        <input class="l_input" type="password" id="pwd" name="password" minlength="8"><br>
-        <input id="s_sign_up" class="l_input" type="submit" value="Sign Up">
+  <div id="dr_login_container">
+    <form action="/admin/add_drug" method="POST">
+      <div id= "dr_login_form">
+        <p>Drug Form</p>
+        <label for="drug_name">Drug name:</label><br>
+        <input class="l_input" type="text" id="fname" name="drug_name"><br>
+        <label for="pharma_name">Pharma name:</label><br>
+        <input class="l_input" type="text" id="lname" name="pharma_name"><br>
+        <label for="amount">Amount:</label><br>
+        <input class="l_input" type="text" id="dob" name="amount"><br>
+        <label for="price">Price::</label><br>
+        <input class="l_input" type="text" id="username" name="price"><br>
+        <input id="dr_s_sign_up" class="l_input" type="submit" value="Add Drug">
       </div>
   </form>
   </div>

@@ -20,27 +20,27 @@
   </script>
 
 
-  <div id="login_container">
+  <div id="p_login_container">
     <form action="/patient/signup" method="POST">
-      <div id= "login_form">
-        <p>SignUp Form</p>
-        <label for="firstname">First name:</label><br>
-        <input class="l_input" type="text" id="fname" name="firstname"><br>
-        <label for="lastname">Last name:</label><br>
-        <input class="l_input" type="text" id="lname" name="lastname"><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label><br>
-        <label for="DOB">Date Of Birth:</label><br>
-        <input class="l_input" type="text" id="dob" name="DOB" value="DD/MM/YYYY"><br>
-        <label for="email">Email:</label><br>
-        <input class="l_input" type="text" id="username" name="email"><br>
-        <label for="password">Password:</label><br>
-        <input class="l_input" type="password" id="pwd" name="password" minlength="8"><br>
-        <input id="s_sign_up" class="l_input" type="submit" value="Sign Up">
+      <div id= "p_login_form">
+        <p>Add Prescription</p>
+        <label for="patient_email">Patient Email:</label><br>
+        <input class="l_input" type="text" id="fname" name="patient_email"><br>
+        <label for="doctor_email">Doctor Email:</label><br>
+        <input class="l_input" type="text" id="lname" name="doctor_email"><br>
+        <label for="symptoms">Symptoms:</label><br>
+        <input class="l_input" type="text" id="lname" name="symptoms"><br>
+        <label for="drug">Drug Name:</label><br>
+        <input class="l_input" type="text" id="dob" name="drug"><br>
+        <label for="quantity">Quantity:</label><br>
+        <input class="l_input" type="text" id="username" name="quantity"><br>
+        <label for="dosage">Dosage:</label><br>
+        <input class="l_input" type="text" id="username" name="dosage"><br>
+        <label for="start_date">Prescription Start Date:</label><br>
+        <input class="l_input" type="text" id="username" name="start_date"><br>
+        <label for="end_date">Prescription End Date:</label><br>
+        <input class="l_input" type="text" id="username" name="end_date"><br>
+        <input id="p_s_sign_up" class="l_input" type="submit" value="Add Presc">
       </div>
   </form>
   </div>
